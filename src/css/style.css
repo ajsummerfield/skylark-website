@@ -111,6 +111,10 @@ a:hover {
     .navbar-dark.bg-trans {
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
+
+    .hidden-on-mobile {
+        display: none !important;
+    }
 }
 
 
@@ -216,7 +220,6 @@ p.hero-text {
 @media (max-width: 768px) {
     .banner-text-title.float-end {
         float: inherit !important;
-        /* background-color: rgba(255, 255, 255, 0.5) !important; */
     }
 }
 
