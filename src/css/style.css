@@ -104,11 +104,11 @@ a:hover {
 }
 
 @media (max-width: 992px) {
-    .navbar-light.bg-trans {
+    .navbar-light.navbar-home {
         background-color: rgba(255, 255, 255, 0.5) !important;
     }
 
-    .navbar-dark.bg-trans {
+    .navbar-dark.navbar-home {
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
 
