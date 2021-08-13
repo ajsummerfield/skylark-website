@@ -1,0 +1,247 @@
+/* FONTS: START */
+@font-face {
+    font-family: 'Dense';
+    src: url('/fonts/dense-bold.woff2') format('woff2'),
+        url('/fonts/dense-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dense';
+    src: url('/fonts/dense-regular.woff2') format('woff2'),
+        url('/fonts/dense-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dense';
+    src: url('/fonts/dense-thin.woff2') format('woff2'),
+        url('/fonts/dense-thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-dense-bold {
+    font-family: 'Dense';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.font-dense {
+    font-family: 'Dense';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.font-dense-thin {
+    font-family: 'Dense';
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.font-size-heading {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.font-size-body {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.font-size-body ul {
+    list-style-type: none;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, .75);
+}
+
+.text-white a {
+    color: #ffffff;
+}
+
+.text-white a:hover {
+    color: rgba(255, 255, 255, .75);
+}
+
+/* FONTS: END */
+
+/* NAVBAR: START */
+.navbar-light .navbar-nav .nav-link {
+    color: inherit;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-light.bg-white.bg-trans {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.navbar-dark.bg-black.bg-trans {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar-padding {
+    height: 100px;
+}
+
+@media (max-width: 992px) {
+    .navbar-light.bg-trans {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    .navbar-dark.bg-trans {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+}
+
+
+/* NAVBAR: END */
+
+/* BACKGROUND VIDEO: START */
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.background-video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+.background-video-text-top {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: rgb(255, 255, 255);
+}
+
+.background-video-text-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: rgb(255, 255, 255);
+}
+
+.background-video-text h1,
+.background-video-text h1 span,
+.background-video-text-top h1,
+.background-video-text-top h1 span,
+.background-video-text-bottom h1,
+.background-video-text-bottom h1 span {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.background-video-text-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 10px;
+}
+
+.background-video-text-bg.text-black {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* BACKGROUND VIDEO: END */
+
+/* INLINE VIDEO: START */
+.inline-video {
+    width: 100%;
+}
+
+/* INLINE VIDEO: END */
+
+/* BANNERS: START */
+.hero-text,
+.hero-text .font-dense-thin {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+p.hero-text {
+    border-left: 5px solid #000000;
+    padding-left: 19px;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.hero-banner .lead {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.banner-text-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+
+.banner-text {
+    font-size: 36px;
+    line-height: 36px;
+    border-left: 5px solid #000000;
+    padding-left: 19px;
+}
+
+@media (max-width: 768px) {
+    .banner-text-title.float-end {
+        float: inherit !important;
+        /* background-color: rgba(255, 255, 255, 0.5) !important; */
+    }
+}
+
+/* BANNERS: END */
+
+/* CAROUSEL: START */
+.carousel-item img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.carousel-item .carousel-caption {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px;
+}
+
+.carousel-item .carousel-caption .items {
+    border-left: 5px solid #ffffff;
+    padding-left: 19px;
+}
+
+.carousel-title {
+    font-size: 80px;
+    line-height: 80px;
+}
+
+/* CAROUSEL: END */
