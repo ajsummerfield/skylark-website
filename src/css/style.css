@@ -279,6 +279,8 @@ p.hero-text {
 .rotating-text {
     opacity: 1;
     transition: opacity 1s;
+    padding: 0;
+    white-space: nowrap;
 }
 
 
