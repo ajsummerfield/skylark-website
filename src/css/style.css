@@ -103,19 +103,11 @@ a:hover {
     height: 100px;
 }
 
-@media (max-width: 992px) {
-    .navbar-light.navbar-home {
-        background-color: rgba(255, 255, 255, 0.5) !important;
-    }
-
-    .navbar-dark.navbar-home {
-        background-color: rgba(0, 0, 0, 0.5) !important;
-    }
-
-    .hidden-on-mobile {
-        display: none !important;
-    }
+.video-logo {
+    height: 250px;
 }
+
+
 
 
 /* NAVBAR: END */
@@ -248,3 +240,31 @@ p.hero-text {
 }
 
 /* CAROUSEL: END */
+
+@media (max-width: 992px) {
+    .navbar-light.navbar-home {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    .navbar-dark.navbar-home {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .hidden-on-mobile {
+        display: none !important;
+    }
+
+    .background-video-text h1,
+    .background-video-text h1 span,
+    .background-video-text-top h1,
+    .background-video-text-top h1 span,
+    .background-video-text-bottom h1,
+    .background-video-text-bottom h1 span {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .video-logo {
+        height: 150px;
+    }
+}
