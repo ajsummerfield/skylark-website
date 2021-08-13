@@ -241,6 +241,7 @@ p.hero-text {
 
 /* CAROUSEL: END */
 
+
 @media (max-width: 992px) {
     .navbar-light.navbar-home {
         background-color: rgba(255, 255, 255, 0.5) !important;
@@ -268,3 +269,62 @@ p.hero-text {
         height: 150px;
     }
 }
+
+/* ROTATING TEXT SIZES: START */
+.rotating-text h1,
+.rotating-text h1 span {
+    font-size: 80px;
+}
+
+.rotating-text {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+.rotating-text.fade {
+    opacity: 0;
+}
+
+
+@media (min-width: 576px) {
+
+    .rotating-text h1,
+    .rotating-text h1 span {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .rotating-text h1,
+    .rotating-text h1 span {
+        font-size: 130px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .rotating-text h1,
+    .rotating-text h1 span {
+        font-size: 175px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .rotating-text h1,
+    .rotating-text h1 span {
+        font-size: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .rotating-text h1,
+    .rotating-text h1 span {
+        font-size: 220px;
+    }
+}
+
+/* ROTATING TEXT SIZES: START */

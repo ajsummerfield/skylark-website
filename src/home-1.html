@@ -49,7 +49,7 @@
     <!-- NAVBAR: END -->
 
     <!-- VIDEO BG: START -->
-    <video autoplay muted loop class="background-video">
+    <video autoplay muted class="background-video">
         <source src="/videos/background-video-small.mp4" type="video/mp4">
     </video>
     <div class="container background-video-text-top text-center">
@@ -57,6 +57,11 @@
             <span class="background-video-text-bg">
                 Welcome to <span class="font-dense-bold text-uppercase">Skylark</span><span class="font-dense-thin text-uppercase">International</span>,&nbsp;<br />&nbsp;a relational network of churches, ministries and kingdom initiatives
             </span>
+        </h1>
+    </div>
+    <div class="container background-video-text text-center rotating-text fade">
+        <h1 class="font-dense-thin">
+            <span class="background-video-text-bg font-dense-bold text-uppercase">Rebuilding Ruins</span>
         </h1>
     </div>
     <div class="container background-video-text-bottom text-center">
@@ -85,7 +90,37 @@
     <!-- FOOTER: END-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    <script>
+        var currentTime = 0
+        var video = document.querySelector('video')
+        var text = document.querySelector('.rotating-text')
+        var textContent = document.querySelector('.rotating-text h1 span')
+        video.addEventListener('ended', function() {
+            this.play()
+        })
+        video.onplay = function() {
+            console.log('on play')
+            textContent.textContent = 'Rebuilding Ruins'
+            text.classList.toggle('fade')
+            setTimeout(function() {
+                text.classList.toggle('fade')
+                setTimeout(function() {
+                    textContent.textContent = 'Building Bridges'
+                    text.classList.toggle('fade')
+                    setTimeout(function() {
+                        text.classList.toggle('fade')
+                        setTimeout(function() {
+                            textContent.textContent = 'Creating Culture'
+                            text.classList.toggle('fade')
+                            setTimeout(function() {
+                                text.classList.toggle('fade')
+                            }, 4500)
+                        }, 500)
+                    }, 4500)
+                }, 500)
+            }, 5000)
+        }
+    </script>
 </body>
 
 </html>
