@@ -303,6 +303,7 @@ p.hero-text {
     .rotating-text h1 span {
         font-size: 130px;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -318,6 +319,11 @@ p.hero-text {
     .rotating-text h1,
     .rotating-text h1 span {
         font-size: 200px;
+    }
+
+    .row>* {
+        padding-right: calc(var(--bs-gutter-x) * 2);
+        padding-left: calc(var(--bs-gutter-x) * 2);
     }
 }
 

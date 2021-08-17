@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,77 +11,78 @@
     <link rel="preload" href="/fonts/dense-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/dense-thin.woff2" as="font" type="font/woff2" crossorigin>
     <link href="/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32.png" sizes="32x32">
 
-    <title>DG Notes</title>
+    <title>Skylark International</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- NAVBAR: START -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-home font-dense-bold text-uppercase">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/images/logo-white.png" alt="" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/who-are-we">Who are we</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/our-vision">Our Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/our-community">Our community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="/our-core-activities">Our Core Activities</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR: END -->
 
-        <h2>DG Notes</h2>
-
-        <section>
-            <h3>Home page</h3>
-            <p>I've made the video full screen, but a common problem is that when switching to a mobile view, the text is clipped (I'm assuming you're wanting to use the MOVING_IMAGES.mp4 video).</p>
-            <p>Typically, the text is not in the video background, but overlayed ontop as to keep the correct dimensions and feel in different device views.</p>
-            <p>It also clashes somewhat with core messaging eg, 'Welcome to skylark'. I'd suggest (for this case), of using a video without any text</p>
-            <p>So, I've added a dummy video, and a few options. If you want to continue with the real video as the text, if you could supply the video without text and an indication of layout (as per home-3), that would be great.</p>
-            <p>Also, the navigation itself doesn't have the greatest contrast and the background colours aren't the best. An white version of the logo would help as you would normally put a darker backgorund overlay ontop of a video with lighter text ontop of that</p>
-            <p>With logo, the general trend is that they or more horizontally focused on the web, otherwise it makes some of the text a little harder to read or makes the navigation bars too large</p>
-            <p>See examples:</p>
-            <ul>
-                <li><a href="/home-1.html">home-1 - With supplied video (text sits on top), moved the items to fit around text, video text should be replaced with real text that rotates to match the video</a></li>
-                <li><a href="/home-2.html">home-2 - With a demo video without background text, also with example white logo and text, vertically aligned banner</a></li>
-                <li><a href="/home-3.html">home-3 - Same as 2, but black text and logo as per the style guide</a></li>
-
-            </ul>
-            <p>Please look at these on desktop and mobile, as it does make a pretty big difference</p>
-            <p>Feel free to respond with a mixture of suggestions</p>
-        </section>
-        <section>
-            <h3>Who are we</h3>
-            <p>Video is set to auto play, but most browsers require a click, just standard browser based controls. If you want to provide an image overlay with a 'click to play' button, then great</p>
-            <p>3 down arrows - With background (like the vision doc pdf - Why Skylark International) or without (like the assets provided - Our Commitment)</p>
-            <p>Feel free to suggest font size adjustments</p>
-            <ul>
-                <li><a href="/who-are-we-1.html">who-are-we-1 - 3 down arrows no background</a></li>
-                <li><a href="/who-are-we-2.html">who-are-we-2 - 3 down arrows with background</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Our vision</h3>
-            <p>A few options here:</p>
-            <p>The heading titles can be plain standard text like the vision document (in our-vision-1) or some kind of image banner (in our-vision-2)</p>
-            <p>I couldn't quite get what the word document was intending around the culture items, but I've added two options, a flat list with images (in our-vision-1) or a rotating carousel (in our-vision-2). Note: The rotating carousel really needs the images without the text on them other it doesn't work on mobiles</p>
-            <p>Pick and choose which aspects you would like</p>
-            <ul>
-                <li><a href="/our-vision-1.html">our-vision-1 - Standard text banner, culture list</a></li>
-                <li><a href="/our-vision-2.html">our-vision-2 - Generic image banner, culture carousel</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Our community</h3>
-            <p>Same as our vision, in terms of the headings</p>
-            <ul>
-                <li><a href="/our-community-1.html">our-community-1 - Standard headings</a></li>
-                <li><a href="/our-community-2.html">our-community-2 - Generic image headings</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Our core activities</h3>
-            <p>Same as our vision, in terms of the headings</p>
-            <p>It would be good to a get a small blurb of text to accompany the header. Dummy text added below</p>
-            <p>There is no prayer doc attached, and unless it's kept up to date, I don't suggest adding one, so I've removed the sentence, but feel free to suggest an alternative or provide the doc</p>
-            <ul>
-                <li><a href="/our-core-activities-1.html">our-core-activities-1 - Standard headings</a></li>
-                <li><a href="/our-core-activities-2.html">our-core-activities-2 - Generic image headings</a></li>
-            </ul>
-        </section>
-
-
+    <!-- VIDEO BG: START -->
+    <video autoplay muted loop class="background-video">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+    </video>
+    <div class="container background-video-text text-center">
+        <img src="/images/logo-white.png" alt="" class="mb-5 img-fluid video-logo">
+        <h1 class="font-dense-thin">
+            <span class="background-video-text-bg">
+                Welcome to <span class="font-dense-bold text-uppercase">Skylark</span><span class="font-dense-thin text-uppercase">International</span>,&nbsp;<br />&nbsp;a relational network of churches, ministries and kingdom initiatives
+            </span>
+        </h1>
     </div>
+    <!-- VIDEO BG: END -->
 
+    <!-- FOOTER: START -->
+    <footer class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3 my-4 font-dense fixed-bottom text-white hidden-on-mobile">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="font-dense-thin text-uppercase">© 2021 &nbsp;</span><span class="font-dense-bold text-uppercase">Skylark</span><span class="font-dense-thin text-uppercase">International</span>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <div class="text-center font-dense text-uppercase w-100">Rebuilding Ruins &bull; Building Bridges &bull; Creating Culture</div>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                Charity Number: 1097111
+            </li>
+            <li class="ms-3">
+                4 Hanbury Road, Chelmsford, Essex, CM1 3AE.
+            </li>
+            <li class="ms-3">
+                <a href="mailto:info@skylarkinternational.org">info@skylarkinternational.org</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- FOOTER: END-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
