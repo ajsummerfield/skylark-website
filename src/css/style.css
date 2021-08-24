@@ -62,6 +62,15 @@
 
 .font-size-body ul {
     list-style-type: none;
+    padding-left: 0rem;
+}
+
+
+footer,
+footer span,
+footer div {
+    font-size: 24px !important;
+    line-height: 24px !important;
 }
 
 a {
@@ -106,9 +115,6 @@ a:hover {
 .video-logo {
     height: 250px;
 }
-
-
-
 
 /* NAVBAR: END */
 
@@ -294,6 +300,13 @@ p.hero-text {
     .rotating-text h1,
     .rotating-text h1 span {
         font-size: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .ms-3 {
+        margin-right: 1rem !important;
+        margin-left: 0 !important;
     }
 }
 
