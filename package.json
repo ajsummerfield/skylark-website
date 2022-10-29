@@ -1,0 +1,15 @@
+{
+	"name": "skylark-international-website",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
+	},
+	"dependencies": {
+		"@storyblok/astro": "^1.1.0",
+		"astro": "^1.5.2",
+		"sass": "^1.55.0"
+	}
+}
