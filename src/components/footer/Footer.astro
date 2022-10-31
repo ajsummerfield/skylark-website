@@ -1,4 +1,7 @@
-<div class="footer">
+---
+const { isHome } = Astro.props;
+---
+<div class={`footer ${isHome}`}>
   <div class="columns">
     <div class="column is-4">
       <div class="footer__content">
@@ -9,7 +12,7 @@
             <span class="has-text-weight-light is-uppercase">International</span>
           </li>
           <li>
-            <span class="has-text-weight-bold">Charity Number: 1097111</span>
+            Charity Number: 1097111
           </li>
         </ul>
       </div>

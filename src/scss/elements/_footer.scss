@@ -29,4 +29,13 @@
       justify-content: flex-end;
     }
   }
+
+  &.is-alt {
+    border: 0;
+    color: #ffffff;
+
+    a {
+      color: #ffffff;
+    }
+  }
 }

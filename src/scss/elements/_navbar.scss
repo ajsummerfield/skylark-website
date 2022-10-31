@@ -4,6 +4,20 @@
   background-color: #ffffff;
   min-height: 0;
   box-shadow: 0 0px 5px rgba($default-text-color, 0.25);
+
+  &.is-alt {
+    background-color: transparent;
+    box-shadow: none;
+
+    a.navbar-item {
+      color: #ffffff;
+
+      &:hover, &.is-active-item {
+        background-color: transparent;
+        color: $default-text-color;
+      }
+    }
+  }
 }
 
 a.navbar-item {

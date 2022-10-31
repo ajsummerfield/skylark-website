@@ -8,14 +8,16 @@ const { data } = await storyblokApi.get('cdn/links', {
 
 const links = Object.values(data.links);
 const currentPage = Astro.url.pathname;
+const { isHome } = Astro.props;
+
 const isActivePage = (pathname: string) => {
   return currentPage === pathname ? 'is-active-item' : '';
 };
 ---
-<nav class="navbar is-fixed-top">
+<nav class={`navbar is-fixed-top ${isHome}`}>
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <img src="/images/logo.png" width="100">
+      <img src={isHome ? '/images/logo-white.png' : '/images/logo.png'} width="100">
     </a>
     <a role="button" class="navbar-burger">
       <span></span>

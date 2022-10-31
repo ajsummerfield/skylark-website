@@ -3,6 +3,9 @@ import Header from "../components/header/Header.astro";
 import Footer from "../components/footer/Footer.astro";
 import 'bulma';
 import '../scss/main.scss';
+
+const { pathname } = Astro.url;
+const isHome = pathname === '/' ? 'is-alt' : '';
 ---
 
 <!DOCTYPE html>
@@ -17,11 +20,11 @@ import '../scss/main.scss';
 
   <body>
     <div class="wrapper">
-      <Header />
+      <Header isHome={isHome} />
       <div class="main">
         <slot />
       </div>
-      <Footer/>
+      <Footer isHome={isHome} />
     </div>
   </body>
 </html>
