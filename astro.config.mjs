@@ -12,6 +12,8 @@ export default defineConfig({
         feature: "storyblok/Feature",
         grid: "storyblok/Grid",
         teaser: "storyblok/Teaser",
+        backgroundVideo: "storyblok/BackgroundVideo/BackgroundVideo",
+        video: "storyblok/video/video",
       },
       use: [apiPlugin]
     }),
