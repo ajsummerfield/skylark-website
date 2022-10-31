@@ -1,13 +1,27 @@
+---
+import Header from "../components/header/Header.astro";
+import Footer from "../components/footer/Footer.astro";
+import 'bulma';
+import '../scss/main.scss';
+---
+
 <!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <title>@storyblok/astro</title>
+    <link rel="icon" type="image/png" href="/images/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32.png" sizes="32x32">
+    <title>Skylark International</title>
   </head>
 
-  <body class='container'>
-    <slot />
+  <body>
+    <div class="wrapper">
+      <Header />
+      <div class="main">
+        <slot />
+      </div>
+      <Footer/>
+    </div>
   </body>
 </html>
