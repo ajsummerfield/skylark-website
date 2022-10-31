@@ -1,0 +1,24 @@
+@use '../settings/colors' as *;
+
+.navbar {
+  background-color: #ffffff;
+  min-height: 0;
+  box-shadow: 0 0px 5px rgba($default-text-color, 0.25);
+}
+
+a.navbar-item {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  color: $default-text-color;
+
+  img {
+    max-height: none;
+  }
+
+  &:hover, &.is-active-item {
+    color: #000000;
+    background-color: #fafafa;
+  }
+}
