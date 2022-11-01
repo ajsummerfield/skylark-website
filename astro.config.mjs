@@ -13,7 +13,7 @@ export default defineConfig({
         grid: "storyblok/Grid",
         teaser: "storyblok/Teaser",
         backgroundVideo: "storyblok/BackgroundVideo/BackgroundVideo",
-        video: "storyblok/video/video",
+        video: "storyblok/Video/Video",
       },
       use: [apiPlugin]
     }),
