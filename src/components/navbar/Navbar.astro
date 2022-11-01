@@ -29,7 +29,7 @@ const isActivePage = (pathname: string) => {
   <div class="navbar-menu">
     <div class="navbar-end">
       {links.map((link) => (
-        <a href={link.slug} class={`navbar-item ${isActivePage(link['real_path'])}`}>
+        <a href={link['real_path']} class={`navbar-item ${isActivePage(link['real_path'])}`}>
           {link.name}
         </a>
       ))}
