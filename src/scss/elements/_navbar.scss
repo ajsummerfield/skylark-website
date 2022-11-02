@@ -17,6 +17,30 @@
         color: $default-text-color;
       }
     }
+
+    .navbar-burger {
+      span {
+        background-color: #ffffff;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      background-color: rgba($default-text-color, 0.75);
+
+      .navbar-menu {
+        background-color: rgba($default-text-color, 0.75);
+
+        a.navbar-item {
+          text-align: center;
+          padding: 0.125rem;
+    
+          &:hover, &.is-active-item {
+            background-color: rgba($default-text-color, 0.8);
+            color: #ffffff;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -73,7 +97,7 @@ a.navbar-item {
     position: absolute;
     width: 100%;
     left: 100%;
-    top: 101px;
+    top: 100px;
     transition: left linear 250ms;
   }
 

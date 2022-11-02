@@ -14,10 +14,12 @@
   }
 
   &__content {
+    padding: 2rem 0.75rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
     
     img {
@@ -28,7 +30,7 @@
 
     p {
       color: #ffffff;
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       font-weight: 100;
 
       &:has(:not(img)) {
@@ -37,5 +39,18 @@
         padding: 0 0.5rem;
       }
     }
+
+    @media screen and (min-width: 1024px) {
+      width: 80%;
+
+      p {
+        font-size: 2.25rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    position: relative;
+    min-height: calc(100vh - 100px);
   }
 }
