@@ -17,7 +17,6 @@
   }
 
   &__list {
-    display: flex;
 
     li {
       &:not(:last-child) {
@@ -27,6 +26,10 @@
 
     &.is-right-aligned {
       justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
     }
   }
 

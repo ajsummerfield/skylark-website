@@ -14,6 +14,10 @@ const isActivePage = (pathname: string) => {
   return currentPage === pathname ? 'is-active-item' : '';
 };
 ---
+<script>
+  import '../../scripts/navbar.js';
+</script>
+
 <nav class={`navbar is-fixed-top ${isHome}`}>
   <div class="navbar-brand">
     <a class="navbar-item" href="/">

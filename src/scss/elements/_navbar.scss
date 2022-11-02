@@ -36,3 +36,48 @@ a.navbar-item {
     background-color: #fafafa;
   }
 }
+
+
+.navbar-burger {
+
+  span {
+    height: 3px;
+    width: 30px;
+    left: calc(50% - 15px);
+
+    &:nth-child(1) {
+      top: calc(50% - 9px);
+    }
+
+    &:nth-child(3) {
+      top: calc(50% + 7px);
+    }
+  }
+
+  &.is-active {
+    
+    span:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.navbar-menu {
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 101px;
+    transition: left linear 250ms;
+  }
+
+  &.is-active {
+    left: 0;
+  }
+}
