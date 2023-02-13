@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import storyblok from "@storyblok/astro";
-import { apiPlugin } from "@storyblok/js"
-import netlify from "@astrojs/netlify/functions";;
+import { apiPlugin } from "@storyblok/js";
+import netlify from "@astrojs/netlify/functions";
  
 export default defineConfig({
   output: 'server',
@@ -9,6 +9,7 @@ export default defineConfig({
     netlify(),
     storyblok({
       accessToken: "rRfXQMqHfyWxl4AUoL701gtt",
+      bridge: true,
       components: {
         page: "storyblok/Page",
         hero: "storyblok/Hero",
