@@ -5,9 +5,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
   const storyblokApi = useStoryblokApi();
-
+  const version = import.meta.env.CMS_ENV === 'production' ? 'published' : 'draft';
   const { data } = await storyblokApi.get('cdn/links', {
-    version: 'draft',
+    version: version,
   });
 
   let links = data.links;
@@ -23,9 +23,9 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 
 const storyblokApi = useStoryblokApi();
-
+const version = import.meta.env.CMS_ENV === 'production' ? 'published' : 'draft';
 const { data } = await storyblokApi.get(`cdn/stories/${slug}`, {
-  version: 'draft',
+  version: version,
 });
 
 const story = data.story;

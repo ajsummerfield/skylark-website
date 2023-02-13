@@ -4,8 +4,9 @@ import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const sbApi = useStoryblokApi();
+const version = import.meta.env.CMS_ENV === 'production' ? 'published' : 'draft';
 const { data } = await sbApi.get('cdn/stories/home', {
-  version: 'draft',
+  version: version,
 });
 
 const story = data.story;
