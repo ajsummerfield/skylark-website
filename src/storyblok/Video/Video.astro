@@ -1,0 +1,12 @@
+---
+import { storyblokEditable } from '@storyblok/astro';
+import './Video.scss';
+
+const { blok } = Astro.props;
+---
+
+<div {...storyblokEditable(blok)}>
+  <div class="image is-16by9">
+    <video src={blok.video.filename} controls="controls" width="100%" class="has-ratio"></video>
+  </div>
+</div>

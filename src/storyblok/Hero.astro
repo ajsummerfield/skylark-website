@@ -1,0 +1,22 @@
+---
+import { storyblokEditable } from '@storyblok/astro';
+import './Hero.scss';
+
+const { blok } = Astro.props;
+---
+
+<div {...storyblokEditable(blok)}>
+  <div class="hero" style={`background-image: url(${blok.image.filename})`}>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-5">
+            <h1 class="hero__title">{blok.title}</h1>
+            <h2 class="hero__subtitle">{blok.subtitle}</h2>
+          </div>
+          <div class="column is-7"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

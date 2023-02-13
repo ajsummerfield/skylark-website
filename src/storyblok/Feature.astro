@@ -1,0 +1,17 @@
+---
+import { storyblokEditable } from '@storyblok/astro';
+import { renderRichText } from '@storyblok/astro';
+import './Feature.scss';
+
+const { blok } = Astro.props;
+
+const renderedRichText = renderRichText(blok.body);
+---
+
+<div {...storyblokEditable(blok)}>
+  <div class="feature">
+    <img src={blok.icon?.filename} alt={blok.icon?.name} class="feature__icon" />
+    <h2 class='feature__title'>{blok.title}</h2>
+    <div set:html={renderedRichText} class='feature__body'></div>
+  </div>
+</div>
