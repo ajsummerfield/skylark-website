@@ -1,0 +1,37 @@
+@use '../scss/settings/colors' as *;
+
+.feature {
+  margin-bottom: 1.25rem;
+
+  &__icon {
+    display: block;
+    margin: 0 auto 0.25rem;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    
+    &:after {
+      content: '';
+      display: block;
+      width: 250px;
+      border-bottom: 6px dotted $default-text-color;
+      margin: 0.5rem auto;
+    }
+  }
+
+  &__body {
+    text-align: center;
+
+    ul {
+      display: inline-block;
+      list-style: disc;
+      text-align: left;
+    }
+  }
+}

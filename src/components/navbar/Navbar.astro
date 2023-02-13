@@ -1,0 +1,42 @@
+---
+import { useStoryblokApi } from '@storyblok/astro';
+
+const storyblokApi = useStoryblokApi();
+const { data } = await storyblokApi.get('cdn/links', {
+  version: 'draft',
+});
+
+const links = Object.values(data.links);
+const currentPage = Astro.url.pathname;
+const { isHome } = Astro.props;
+
+const isActivePage = (pathname: string) => {
+  return currentPage === pathname ? 'is-active-item' : '';
+};
+---
+<script>
+  import '../../scripts/navbar.js';
+</script>
+
+<nav class={`navbar is-fixed-top ${isHome}`}>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src={isHome ? '/images/logo-white.png' : '/images/logo.png'} alt="Skylark International" width="100" />
+    </a>
+    <a role="button" class="navbar-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      {links.map((link) => (
+        <a href={link['real_path']} class={`navbar-item ${isActivePage(link['real_path'])}`}>
+          {link.name}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>

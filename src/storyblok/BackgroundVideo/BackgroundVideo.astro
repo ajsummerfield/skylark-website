@@ -1,0 +1,15 @@
+---
+import { storyblokEditable } from '@storyblok/astro';
+import { renderRichText } from '@storyblok/astro';
+import './BackgroundVideo.scss';
+
+const { blok } = Astro.props;
+const renderedRichText = renderRichText(blok.body);
+---
+
+<div {...storyblokEditable(blok)}>
+  <div class="background-video">
+    <video src={blok.video.filename} autoplay muted loop></video>
+    <div class="background-video__content" set:html={renderedRichText}></div>
+  </div>
+</div>

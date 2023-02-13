@@ -1,0 +1,107 @@
+@use '../settings/colors' as *;
+
+.navbar {
+  background-color: #ffffff;
+  min-height: 0;
+  box-shadow: 0 0px 5px rgba($default-text-color, 0.25);
+
+  &.is-alt {
+    background-color: transparent;
+    box-shadow: none;
+
+    a.navbar-item {
+      color: #ffffff;
+
+      &:hover, &.is-active-item {
+        background-color: transparent;
+        color: $default-text-color;
+      }
+    }
+
+    .navbar-burger {
+      span {
+        background-color: #ffffff;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      background-color: rgba($default-text-color, 0.75);
+
+      .navbar-menu {
+        background-color: rgba($default-text-color, 0.75);
+
+        a.navbar-item {
+          text-align: center;
+          padding: 0.125rem;
+    
+          &:hover, &.is-active-item {
+            background-color: rgba($default-text-color, 0.8);
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+a.navbar-item {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  color: $default-text-color;
+
+  img {
+    max-height: none;
+  }
+
+  &:hover, &.is-active-item {
+    color: #000000;
+    background-color: #fafafa;
+  }
+}
+
+
+.navbar-burger {
+
+  span {
+    height: 3px;
+    width: 30px;
+    left: calc(50% - 15px);
+
+    &:nth-child(1) {
+      top: calc(50% - 9px);
+    }
+
+    &:nth-child(3) {
+      top: calc(50% + 7px);
+    }
+  }
+
+  &.is-active {
+    
+    span:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.navbar-menu {
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 100px;
+    transition: left linear 250ms;
+  }
+
+  &.is-active {
+    left: 0;
+  }
+}
