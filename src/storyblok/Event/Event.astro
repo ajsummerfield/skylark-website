@@ -1,0 +1,27 @@
+---
+import { storyblokEditable } from '@storyblok/astro';
+import './Event.scss';
+
+const { blok } = Astro.props;
+---
+
+<div {...storyblokEditable(blok)}>
+  {blok.link.url.length > 0 && (
+    <a href={blok.link.url} target={blok.link.target} class="event">
+      <img src={blok.thumbnail.filename} alt={blok.title} class="event__thumbnail">
+      <div class="event__details">
+        <h3 class="event__title">{blok.title}</h3>
+        <h4 class="event__date">{blok.date}</h4>
+      </div>
+    </a>
+  )}
+  {blok.link.url.length == 0 && (
+    <div class="event event--coming-soon">
+      <img src={blok.thumbnail.filename} alt={blok.title} class="event__thumbnail">
+      <div class="event__details">
+        <h3 class="event__title">{blok.title}</h3>
+        <h4 class="event__date">{blok.date}</h4>
+      </div>
+    </div>
+  )}
+</div>
