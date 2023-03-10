@@ -22,6 +22,9 @@ export default defineConfig({
         teaser: "storyblok/Teaser",
         backgroundVideo: "storyblok/BackgroundVideo/BackgroundVideo",
         video: "storyblok/Video/Video",
+        richText: "storyblok/RichText",
+        eventsList: "storyblok/EventsList/EventsList",
+        event: "storyblok/Event/Event"
       },
       use: [apiPlugin]
     }),

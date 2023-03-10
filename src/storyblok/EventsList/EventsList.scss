@@ -1,0 +1,9 @@
+@use '../../scss/settings/colors' as *;
+
+.events-list {
+  margin-top: 2rem;
+
+  .column > div {
+    height: 100%;
+  }
+}
