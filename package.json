@@ -6,13 +6,18 @@
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
-		"proxy": "local-ssl-proxy --source 3010 --target 3000 --cert .cert/cert.pem --key .cert/key.pem"
+		"proxy": "local-ssl-proxy --source 3000 --target 4321 --cert .cert/cert.pem --key .cert/key.pem"
 	},
 	"dependencies": {
-		"@astrojs/netlify": "^2.1.2",
-		"@storyblok/astro": "^2.0.5",
-		"astro": "^2.0.10",
-		"bulma": "^0.9.4",
-		"sass": "^1.55.0"
+		"@astrojs/netlify": "^5.2.0",
+		"@storyblok/astro": "^4.0.4",
+		"astro": "^4.5.16",
+		"bulma": "^1.0.0"
+	},
+  "devDependencies": {
+    "sass": "^1.74.1"
+  },
+	"volta": {
+		"node": "18.14.1"
 	}
 }
