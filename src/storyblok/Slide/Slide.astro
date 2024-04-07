@@ -1,0 +1,18 @@
+---
+import { renderRichText } from '@storyblok/astro';
+import './Slide.scss';
+
+const { blok } = Astro.props;
+const renderedRichText = renderRichText(blok.description);
+---
+
+<div class="swiper-slide">
+  <div class="slide" style={`background-image: url(${blok.image.filename})`}>
+    <div class="container">
+      <div class="slide__content">
+        <div class="h3 slide__title">{blok.title}</div>
+        <div set:html={renderedRichText} class='slide__desc'></div>
+      </div>
+    </div>
+  </div>
+</div>

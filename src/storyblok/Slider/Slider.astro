@@ -1,0 +1,32 @@
+---
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import './Slider.scss';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+
+const { blok } = Astro.props;
+---
+
+<div class="slider">
+  <div class="swiper" >
+    <div class="swiper-wrapper">
+      {blok.slides?.map((blok) => {
+        return <StoryblokComponent blok={blok} />
+      })}
+    </div>
+  </div>
+</div>
+
+<script>
+  import Swiper from 'swiper';
+  import { register } from 'swiper/element/bundle';
+  register();
+
+  new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    }
+  });
+</script>

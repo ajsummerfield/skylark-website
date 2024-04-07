@@ -42,6 +42,10 @@
       }
     }
   }
+
+  &-burger {
+    color: #000000;
+  }
 }
 
 a.navbar-item {
@@ -73,15 +77,25 @@ a.navbar-item {
       top: calc(50% - 9px);
     }
 
+    &:nth-child(2) {
+      top: calc(50%);
+    }
+
     &:nth-child(3) {
-      top: calc(50% + 7px);
+      top: calc(50% + 9px);
+      bottom: auto;
     }
   }
 
   &.is-active {
-    
-    span:nth-child(3) {
-      transform: translateY(-10px) rotate(-45deg);
+    span {
+      &:nth-child(1) {
+        top: calc(50% - 1px);
+      }
+  
+      &:nth-child(2) {
+        top: calc(50%);
+      }
     }
   }
 
