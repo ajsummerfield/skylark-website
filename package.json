@@ -12,11 +12,12 @@
 		"@astrojs/netlify": "^5.2.0",
 		"@storyblok/astro": "^4.0.4",
 		"astro": "^4.5.16",
-		"bulma": "^1.0.0"
+		"bulma": "^1.0.0",
+		"swiper": "^11.1.0"
 	},
-  "devDependencies": {
-    "sass": "^1.74.1"
-  },
+	"devDependencies": {
+		"sass": "^1.74.1"
+	},
 	"volta": {
 		"node": "18.14.1"
 	}

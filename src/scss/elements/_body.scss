@@ -30,6 +30,10 @@ body {
     }
   }
 
+  .container:has(:not(.slide)) {
+    padding: 0 0.75rem;
+  }
+
   p {
     &:not(:last-child) {
       margin-bottom: 0.5rem;

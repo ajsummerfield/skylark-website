@@ -29,7 +29,9 @@ export default defineConfig({
       video: "storyblok/Video/Video",
       richText: "storyblok/RichText",
       eventsList: "storyblok/EventsList/EventsList",
-      event: "storyblok/Event/Event"
+      event: "storyblok/Event/Event",
+      slider: "storyblok/Slider/Slider",
+      slide: "storyblok/Slide/Slide"
     },
     use: [apiPlugin]
   })]
