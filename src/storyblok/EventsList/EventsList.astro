@@ -1,0 +1,25 @@
+---
+import { storyblokEditable } from '@storyblok/astro';
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro';
+import './EventsList.scss';
+
+const { blok } = Astro.props;
+---
+
+<div {...storyblokEditable(blok)}>
+  <div class="container">
+    <div class="events-list">
+      <div class="columns is-multiline">
+        {
+          blok.events?.map((blokEvent) => {
+            return (
+              <div class="column is-4">
+                <StoryblokComponent blok={blokEvent} />  
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</div>
