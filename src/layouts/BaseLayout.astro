@@ -21,7 +21,7 @@ const isHome = pathname === '/' ? 'is-alt' : '';
   <body>
     <div class="wrapper">
       <Header isHome={isHome} />
-      <div class="main">
+      <div class={`main ${isHome ? 'is-home' : ''}`}>
         <slot />
       </div>
       <Footer isHome={isHome} />
