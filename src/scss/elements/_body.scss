@@ -24,7 +24,10 @@ body {
   .main {
     flex: 1 0 auto;
     padding: 3rem 0;
-    background-color: #ffffff;
+
+    &:not(&.is-home) {
+      background-color: #ffffff;;
+    }
 
     .container {
       padding: 0 0.75rem;
