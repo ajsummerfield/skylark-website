@@ -31,7 +31,8 @@ export default defineConfig({
       eventsList: "storyblok/EventsList/EventsList",
       event: "storyblok/Event/Event",
       slider: "storyblok/Slider/Slider",
-      slide: "storyblok/Slide/Slide"
+      slide: "storyblok/Slide/Slide",
+      button: "storyblok/Button/Button"
     },
     use: [apiPlugin]
   })]

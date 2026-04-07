@@ -1,0 +1,12 @@
+---
+import { storyblokEditable } from '@storyblok/astro';
+import './Button.scss';
+
+const { blok } = Astro.props;
+---
+
+<div {...storyblokEditable(blok)}>
+  <a href={blok.link.url} target={blok.link.target} class="button is-primary">
+    <span class="button__inner">{blok.text}</span>
+  </a>
+</div>
