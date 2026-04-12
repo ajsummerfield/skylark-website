@@ -7,6 +7,6 @@ const { blok } = Astro.props;
 
 <div {...storyblokEditable(blok)}>
   <div class="image is-16by9">
-    <video src={blok.video.filename} controls="controls" width="100%" class="has-ratio" poster={blok.thumbnail.filename}></video>
+    <video src={blok.video.filename} controls="controls" width="100%" class="has-ratio" poster={blok.thumbnail?.filename}></video>
   </div>
 </div>
